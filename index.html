@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna-Gallla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <nav  class="navbar">
+            <div class="logo">CashFlo</div> <div class="shortlink"><a href= "#app" class="white">Go to CashFlo</a></div>
+        </nav>
+    </section>
+
+    <section class="home">
+        <div class="intro">
+            WELCOME TO YOUR OWN DIGITAL CASHFLO
+            <div class="rect"></div>
+            <div>
+            <a href = "#app"><button type="button" class="navbutton">Go to CashFlo</button></a>
+            </div>
+        </div>
+        <div class="imageshall">
+            <img src="./icons/iconmonstr-currency-25.svg" alt="Rupees" class="image">
+            <div class="circle"></div>
+        </div>
+    </section>
+
+
+    <section class="area" id="app">
+        
+        <section class="inbox">
+
+
+            <div class = "form">
+                <input type="number" id="tprice" class="inp" name="Item Price" required>
+                <label for="Item Price" class="label-name">
+                    <span class="content-name">Item Price</span>
+                </label>
+            </div>
+            
+            <div class="form">
+                <input type="number" id="paid" class="inp" name="Paid Amount" required>
+                <label for="Paid Amount" class="label-name">
+                    <span class="content-name">Paid Amount</span>
+                </label>
+            </div>
+
+        
+        <button type = "button" id="mutton" onclick="errors(document.getElementById('tprice').value,document.getElementById('paid').value)">Submit</button>
+        <small class="error"></small>
+        <small class="leftamt"></small>
+        </section>
+        
+        <section class="noteBlock"></section>
+    </section>
+    <footer class="foot">
+        <div class="logof">CashFlo</div>
+        <div class = "links">
+            <a href="https://github.com">
+            <img src="./icons/iconmonstr-github-3.svg" alt="Github" class="svglink">
+            </a>
+            <a href="https://twitter.com">
+            <img src="./icons/twitter.svg" alt="Twitter" class="svglink">
+            </a>
+            <a href="https://www.linkedin.com/">
+            <img src="./icons/linkedin-logo.svg" alt="Linkedin" class="svglink">
+            </a>
+            <a href="https://www.instagram.com">
+            <img src="./icons/instagram.svg" alt="Instagram" class="svglink">
+            </a>
+        </div>
+    </footer>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
